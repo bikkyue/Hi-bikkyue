@@ -5,7 +5,7 @@
 自分用の案内容webページ
 
 - 実際のWebページ
-hello.bikkyue.dev
+hi.bikkyue.dev
 
 ## 使用言語・環境
 
