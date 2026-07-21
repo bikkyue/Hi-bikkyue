@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1c1c1e">
+    <title>hello bikkyue</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-layer is-visible" id="bg-layer-a"></div>
+    <div class="bg-layer" id="bg-layer-b"></div>
+    <p class="greeting">Hi, this is <strong>Bikkyue</strong>.<br>Welcome to my page.</p>
+    <nav class="links">
+      <a href="https://note.com/xxxx" target="_blank" rel="noopener" aria-label="Note">
+        <img src="https://images-links.bikkyue.dev/link-icon/note.svg" alt="">
+      </a>
+      <a href="https://vrchat.com/home/user/xxxx" target="_blank" rel="noopener" aria-label="VRChat">
+        <img src="https://images-links.bikkyue.dev/link-icon/vrchat.svg" alt="">
+      </a>
+      <a href="https://github.com/xxxx" target="_blank" rel="noopener" aria-label="Github">
+        <img src="https://images-links.bikkyue.dev/link-icon/github.svg" alt="">
+      </a>
+      <a href="https://twitter.com/xxxx" target="_blank" rel="noopener" aria-label="X">
+        <img src="https://images-links.bikkyue.dev/link-icon/x.svg" alt="">
+      </a>
+    </nav>
+    <button type="button" class="gallery-toggle" aria-label="Gallery" aria-expanded="false" aria-controls="gallery-panel">
+      <img src="Asset/icon/picture.svg" alt="">
+      <span class="gallery-toggle-divider" aria-hidden="true"></span>
+      <span>Gallery</span>
+    </button>
+
+    <aside id="gallery-panel" class="gallery-panel" aria-label="Gallery" aria-hidden="true">
+      <div class="gallery-panel-list">
+        <img src="Asset/Gallery/01.webp" alt="" loading="lazy">
+        <img src="Asset/Gallery/02.webp" alt="" loading="lazy">
+        <img src="Asset/Gallery/03.webp" alt="" loading="lazy">
+        <img src="Asset/Gallery/04.webp" alt="" loading="lazy">
+        <img src="Asset/Gallery/05.webp" alt="" loading="lazy" class="is-active">
+      </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
