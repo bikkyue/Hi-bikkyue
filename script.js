@@ -70,6 +70,11 @@ galleryImages.forEach((image) => {
     image.addEventListener('click', () => selectGalleryImage(image));
 });
 
+// 初期のぼかしを次フレームで解除し、blurのtransitionでくっきりへアニメーションさせる
+requestAnimationFrame(() => {
+    requestAnimationFrame(() => document.body.classList.remove('bg-intro'));
+});
+
 // スマホなどの縦画面では、横画面用の05.webpの代わりに04.webpを初期表示にする
 if (window.matchMedia('(orientation: portrait)').matches) {
     const portraitDefault = Array.from(galleryImages).find(
