@@ -25,12 +25,17 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0;
-    transition: opacity 700ms ease;
+    transition: opacity 700ms ease, filter 2200ms ease;
     will-change: opacity;
 }
 
 .bg-layer.is-visible {
     opacity: 1;
+}
+
+/* 読み込み直後だけ背景をぼかしておき、bg-introクラスの除去で数秒かけてくっきりさせる */
+body.bg-intro .bg-layer {
+    filter: blur(24px);
 }
 
 #bg-layer-a {
@@ -40,6 +45,10 @@ body {
 @media (prefers-reduced-motion: reduce) {
     .bg-layer {
         transition: none;
+    }
+    /* 動きを抑える設定では、ぼかしの演出は行わず最初からくっきり表示する */
+    body.bg-intro .bg-layer {
+        filter: none;
     }
 }
 
