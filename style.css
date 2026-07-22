@@ -64,7 +64,7 @@ body::before {
     color: #fff;
     font-size: clamp(2rem, 5.5vw, 3.25rem);
     font-weight: 400;
-    line-height: 1.35;
+    line-height: 1.25;
     letter-spacing: -0.01em;
     text-align: left;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85), 0 4px 18px rgba(0, 0, 0, 0.7);
@@ -142,6 +142,12 @@ body::before {
 .links a[aria-label="VRChat"] img {
     width: 36px;
     height: 36px;
+}
+
+/* Noteの「n」は線が細く小さく見えるので、光学的に他と揃うよう少し大きくする */
+.links a[aria-label="Note"] img {
+    width: 26px;
+    height: 26px;
 }
 
 .links a:hover {
